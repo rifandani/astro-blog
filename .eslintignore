@@ -1,0 +1,13 @@
+.vscode
+.yarn
+.husky
+dist
+html
+public
+coverage
+index.d.ts
+.eslintrc.js
+jest.config.js
+tailwind.config.js
+postcss.config.js
+commitlint.config.js
