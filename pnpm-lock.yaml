@@ -41,9 +41,6 @@ devDependencies:
   '@typescript-eslint/parser':
     specifier: ^6.11.0
     version: 6.11.0(eslint@8.53.0)(typescript@5.2.2)
-  accessible-astro-components:
-    specifier: ^2.3.1
-    version: 2.3.1
   astro:
     specifier: ^3.5.3
     version: 3.5.3(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
@@ -1726,10 +1723,6 @@ packages:
 
   /abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
-    dev: true
-
-  /accessible-astro-components@2.3.1:
-    resolution: {integrity: sha512-5Onerj81B/cGVgI2S8agSdNyJGl/ALI899WUM6VtW1FQBOALi5vkbnzQXthqPlA5n5nZUoBBYqbC636V5Ke9zA==}
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.11.2):

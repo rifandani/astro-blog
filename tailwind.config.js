@@ -2,6 +2,7 @@ const plugin = require('tailwindcss/plugin')
 const forms = require('@tailwindcss/forms')
 const typography = require('@tailwindcss/typography')
 const animate = require('tailwindcss-animate')
+const daisyui = require('daisyui')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -21,6 +22,7 @@ module.exports = {
     typography,
     forms,
     animate,
+    daisyui,
     plugin(({ matchUtilities, addUtilities }) => {
       matchUtilities({
         vg: (value) => ({
@@ -41,4 +43,9 @@ module.exports = {
         })
     }),
   ],
+  daisyui: {
+    logs: false,
+    themes: true,
+		darkTheme: "dark", // name of one of the included themes for dark mode
+  },
 }

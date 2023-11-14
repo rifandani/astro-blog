@@ -1,0 +1,57 @@
+---
+import { Icon } from 'astro-icon'
+import HeaderTheme from './HeaderTheme.astro'
+---
+
+<header class="drawer">
+  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+
+  <nav class="drawer-content flex flex-col">
+    <!-- Navbar -->
+    <div class="navbar w-full bg-base-300">
+      <section class="navbar-start">
+        <div class="flex-none lg:hidden">
+          <label for="my-drawer" aria-label="open sidebar" class="btn btn-square btn-ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-6 w-6 stroke-current"
+              ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"
+              ></path></svg
+            >
+          </label>
+        </div>
+
+        <a href="/" class="navbar-start ml-2 flex flex-1 items-center space-x-2 text-2xl">
+          <Icon name="simple-icons:astro" height="1em" />
+          <p class="font-semibold tracking-wider">Rifandani</p>
+        </a>
+      </section>
+
+      <section class="navbar-center hidden flex-none lg:block">
+        <ul class="menu menu-horizontal">
+          <!-- Navbar menu content here -->
+          <li><a href="/resume">Resume</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </section>
+
+      <section class="navbar-end">
+        <HeaderTheme />
+      </section>
+    </div>
+
+    <!-- Page content here -->
+    <slot />
+  </nav>
+
+  <aside class="drawer-side">
+    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu min-h-full w-80 bg-base-200 p-4">
+      <!-- Sidebar content here -->
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </aside>
+</header>
